@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if show_title %}
+            <h1 class="top">{{ show_title }}</h1>
+        {% else %}
+            <div>Error</div>
+        {% endif %}
+
+        {% if show_rank %}
+            <h1 class="bottom-right">#{{ show_rank }}</h1>
+        {% else %}
+            <div>Error</div>
+        {% endif %}
+
+        {% if show_yr %}
+            <h1 class="bottom-left">{{ show_yr }}</h1>
+        {% else %}
+            <div>Error</div>
+        {% endif %}
+
+        {% if show_image_imageUrl, show_image_height, show_image_width %}
+            <img class="crop" src="{{ show_image_imageUrl }}" alt="">
+        {% else %}
+            <h1>Error</h1>
+        {% endif %}
+    </div>
+</body>
+</html>

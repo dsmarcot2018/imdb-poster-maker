@@ -1,0 +1,43 @@
+/* https://www.educative.io/edpresso/how-to-crop-an-image-in-css */
+.crop {
+        width: 1000px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+.crop img {
+        margin: -75px 0 0 -100px;
+    }
+
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.container {
+    position: relative;
+    text-align: left;
+    width: 1000px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    font-size: 100px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: -70px;
+    left: 10px;
+    font-size: 100px;
+}
+
+.top {
+    position: absolute;
+    text-align: center;
+    top: -50px;
+    width: 1000px;
+    font-family: "Impact", serif;
+    font-size: 5vw;
+}
