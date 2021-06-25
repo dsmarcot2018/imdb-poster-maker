@@ -12,7 +12,7 @@ Once the program receives the keyword it will then find 4 things
   1. Open as a flask project in Pycharm
   2. Make sure the Python requests package is installed
   3. Run App.py
-  4. Open or reload Overlay.html
+  4. Open or reload the provided IP for the site
   5. Input the keyword you would like to search for
   6. Look at your new masterpiece
 
